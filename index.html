@@ -2,60 +2,209 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Marcus Wiens">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A page about Marcus Wiens">
-    <meta name="keywords" content="Marcus Wiens, Marcus, Wiens, MW, Marcus W, Marcus W.">
-    <title>Marcus W. Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Methods of Radish | Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    body {
-        font-family: 'Ubuntu Sans Mono', monospace; font-size: 1.0em;
-    } 
-    nav {
-        text-align: right;
-    } 
-</style>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="articles.html">Articles</a>
-    <a href="workwithme.html">Work with me</a>
-</nav>
 <body>
-    <h2>About</h2>
-    <p>
-        Hi, I'm Marcus and I'm a bioinformatician and full-stack web developer.
-    </p>
-    <p>
-        I was raised on a rural farm in Canada.
-        Currently, I am the Chief Technology Officer (CTO) at numerous companies in Agriculture, Cleantech, and Medtech. 
-    </p>
-    <p>
-        With over a decade of experience in programming, microbiology, and business.
-        I am happy to be back working where it all began. In Agriculture, Medical, and Cleantech. 
-        It's amazing how my first childhood microscrope has crafted my 
-        career.
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Methods<span>of</span>Radish</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="workwithme.html">Work with me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        It's amazing how many people I have hired over my career and when I get the 
-        resume I immediately google them, inspect their github, and look for their
-        person websites. I want to see that people have experience building repos that are relevant to the job. 
-    </p>
-    <p>
-        My other passions include bioinformatics, reading, and startups. 
-        I am currently associated with <a href="www.tinybison.io">Tiny Bison</a> 
-        and love every minute of it!
-    </p>
-    <p>
-        The website you are reading now is my simple website. 
-        Built with HTML and hosted on github.
-        Everything is hand-written, and 
-        no frameworks were involved in this build or design.
-    </p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Methods of Radish</span><br>Web Developer & Designer</h1>
+                <p>I create beautiful, functional websites that help businesses grow and succeed in the digital world. With a passion for clean code and intuitive design, I bring ideas to life.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Learn more about my background and what drives me</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Passionate About Crafting Solutions to High Value Problems</h3>
+                    <p>I love untangling large, complex problems. The kind that demand real testing, research, and a willingness to sit with ambiguity until the pattern emerges. 
+                    <p>That's where I do my best work, and it's why I'm drawn to the earliest, hardest stages of building a company.</p>
+                    <p>My sweet spot is the pre-product-market-fit world: startups finding their footing, all the way up to around $20M valuations. It's the stage where everything is compressed innovation and commercialization happening at once, under real pressure, with no room to hide behind process. That environment doesn't faze me; it's where I'm at my best.
+                    What lets me thrive there is range.</p> 
+                    <p>I'm equally at home writing code and driving business development, so I can take an idea from a technical proof-of-concept all the way to a value proposition a customer actually wants to buy. I speak both languages, which matters enormously when a small team can't afford anything getting lost in translation between the people building the product and the people selling it.</p>
+                    <p>Give me a hard question, a hypothesis, and room to dig, and I'll come back with something rigorous and usually a few insights nobody asked for along the way.
+                    And because work should be fun: never let the truth get in the way of a good story.</p>
+                    <a href="workwithme.html" class="btn">Let's Talk</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://placehold.co/400x500/2563eb/ffffff?text=Profile+Photo" alt="Profile Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I enjoy working with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>ReactJS + GoLang + Postgres</h3>
+                    <p>Creating semantic, responsive layouts with modern open-source technology</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Building enterprise-level applications with robust architecture</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>Rust</h3>
+                    <p>Developing safe and efficient systems programming solutions for secure applications</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Bioinformatics</h3>
+                    <p>I solve complex biological questions with computers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Current Projects</h2>
+                <p>Check out some of my recent projects</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Aivida Inc.</h3>
+                        <p>Full-featured online store with payment integration</p>
+                        <a href="https://www.aivida.com/" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Patrick</h3>
+                        <p>An intelligence layer that eliminates data silos</p>
+                        <a href="https://patrickbot.io/" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Purge Bio</h3>
+                        <p>Developing innovative solutions for sustainable plastic degradation</p>
+                        <a href="https://www.purgebio.com/" class="btn" target="_blank" rel="noopener noreferrer">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> wiensmarcus@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Winnipeg, Manitoba, Canada</p>
+                </div>
+                <form id="contactForm" action="mailto:wiensmarcus@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a class="social-link" href="https://github.com/MethodsofRadish" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                <a class="social-link" href="https://www.linkedin.com/in/marcus-wiens-b04166166/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-link" href="https://medium.com/@tauthor" target="_blank" rel="noopener noreferrer" aria-label="Medium" title="Medium"><i class="fab fa-medium"></i></a>
+                <a class="social-link" href="https://dev.to/madradish" target="_blank" rel="noopener noreferrer" aria-label="Dev.to" title="Dev.to"><i class="fab fa-dev.to"></i></a>
+            </div>
+            <p>&copy; 2026 Marcus Wiens. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission handling
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            });
+        }
+    </script>
 </body>
-<footer>
-    <p>&copy; 2025 Marcus Wiens</p>
-</footer>
 </html>
+
